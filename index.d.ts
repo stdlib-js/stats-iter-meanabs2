@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2019 The Stdlib Authors.
@@ -16,26 +16,20 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
 
-var isIteratorLike = require( '@stdlib/assert-is-iterator-like' );
-var incrmeanabs2 = require( '@stdlib/stats-incr-meanabs2' );
-var format = require( '@stdlib/error-tools-fmtprodmsg' );
-
-
-// MAIN //
+import { Iterator } from '@stdlib/types/iter';
 
 /**
 * Computes the arithmetic mean of squared absolute values for all iterated values.
 *
-* @param {Iterator} iterator - input iterator
-* @throws {TypeError} must provide an iterator
-* @returns {(number|null)} arithmetic mean of squared absolute values
+* @param iterator - input iterator
+* @returns arithmetic mean of squared absolute values
 *
 * @example
-* var runif = require( '@stdlib/random-iter-uniform' );
+* var runif = require( `@stdlib/random/iter/uniform` );
 *
 * var rand = runif( -10.0, 10.0, {
 *     'iter': 100
@@ -44,28 +38,9 @@ var format = require( '@stdlib/error-tools-fmtprodmsg' );
 * var m = itermeanabs2( rand );
 * // returns <number>
 */
-function itermeanabs2( iterator ) {
-	var acc;
-	var v;
-	if ( !isIteratorLike( iterator ) ) {
-		throw new TypeError( format( '1Kl3w,G7', iterator ) );
-	}
-	acc = incrmeanabs2();
-	while ( true ) {
-		v = iterator.next();
-		if ( v.done ) {
-			break;
-		}
-		if ( typeof v.value === 'number' ) {
-			acc( v.value );
-		} else {
-			acc( NaN );
-		}
-	}
-	return acc();
-}
+declare function itermeanabs2( iterator: Iterator ): number | null;
 
 
 // EXPORTS //
 
-module.exports = itermeanabs2;
+export = itermeanabs2;
