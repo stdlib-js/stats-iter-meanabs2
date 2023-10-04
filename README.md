@@ -67,7 +67,7 @@ m = \frac{1}{n} \sum_{i=0}^{n-1} x_i^2
 To use in Observable,
 
 ```javascript
-itermeanabs2 = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-meanabs2@umd/browser.js' )
+itermeanabs2 = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-meanabs2@v0.1.1-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -79,7 +79,7 @@ var itermeanabs2 = require( 'path/to/vendor/umd/stats-iter-meanabs2/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-meanabs2@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-meanabs2@v0.1.1-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -134,7 +134,7 @@ var m = itermeanabs2( arr );
 <html lang="en">
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-meanabs2@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-meanabs2@v0.1.1-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
