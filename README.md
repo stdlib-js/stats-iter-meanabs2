@@ -65,6 +65,11 @@ m = \frac{1}{n} \sum_{i=0}^{n-1} x_i^2
 ## Usage
 
 ```javascript
+import itermeanabs2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-meanabs2@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/stats-iter-meanabs2/tags). For example,
+
+```javascript
 import itermeanabs2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-meanabs2@v0.2.0-deno/mod.js';
 ```
 
@@ -107,7 +112,7 @@ var m = itermeanabs2( arr );
 
 ```javascript
 import runif from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@deno/mod.js';
-import itermeanabs2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-meanabs2@v0.2.0-deno/mod.js';
+import itermeanabs2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-meanabs2@deno/mod.js';
 
 // Create an iterator for generating uniformly distributed pseudorandom numbers:
 var rand = runif( -10.0, 10.0, {
