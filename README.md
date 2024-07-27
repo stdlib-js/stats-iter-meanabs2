@@ -65,7 +65,7 @@ m = \frac{1}{n} \sum_{i=0}^{n-1} x_i^2
 ## Usage
 
 ```javascript
-import itermeanabs2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-meanabs2@esm/index.mjs';
+import itermeanabs2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-meanabs2@v0.2.2-esm/index.mjs';
 ```
 
 #### itermeanabs2( iterator )
@@ -112,7 +112,7 @@ var m = itermeanabs2( arr );
 <script type="module">
 
 import runif from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@esm/index.mjs';
-import itermeanabs2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-meanabs2@esm/index.mjs';
+import itermeanabs2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-meanabs2@v0.2.2-esm/index.mjs';
 
 // Create an iterator for generating uniformly distributed pseudorandom numbers:
 var rand = runif( -10.0, 10.0, {
